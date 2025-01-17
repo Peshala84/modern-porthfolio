@@ -6,7 +6,7 @@ function Resume() {
   const experiences = [
     {
       title: "Computer Science Undergraduate",
-      company: "UCSC",
+      company: "University of Colombo School of Computing",
       period: "2023 - Present",
       description: [
         "Pursuing Bachelor of Science in Computer Science",
@@ -15,13 +15,23 @@ function Resume() {
       ]
     },
     {
-      title: "Learnet Web Site Project",
-      company: "UCSC",
+      title: "Web Team Member",
+      company: "UCSC ACM Student Chapter",
       period: "2024 - Present",
       description: [
         "Leading the development of a comprehensive learn-based full-stack website",
         "Collaborative group project focusing on innovative educational technology",
         "Implementing modern web development practices and technologies"
+      ]
+    },
+    {
+      title: "Intern",
+      company: "Peoples Bank Thissamaharama",
+      period: "2022 - 2023",
+      description: [
+        "Front Office Management - Customer service, Account opening, Money deposit and withdrawal",
+        "Back Office Management - Mail management",
+        "Credit Department - Loan recovery"
       ]
     },
   ];

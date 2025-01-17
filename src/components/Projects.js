@@ -136,7 +136,7 @@ function Projects() {
             href="https://github.com/Peshala84" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="btn btn-primary"
+            className="p_btn p_btn-primary"
           >
             Explore More on GitHub
           </a>
