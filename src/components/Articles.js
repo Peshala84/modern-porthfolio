@@ -28,11 +28,11 @@ function Articles() {
       category: ["OOP", "C++"]
     },
     {
-      title: "Mastering JWT Authentication in Node.js 🔐",
-      description: "Secure your app with JWT! This article explains how to set up JSON Web Token authentication in Node.js for scalable, secure user management 🚀✨.",
-      link: "",
-      image: "/image/blog_1.png",
-      category: ["Security", "Node.js"]
+      title: "Everything an Analyst Needs to Know to Use Git for Version Control 🔐",
+      description: "Version control is an essential skill for analysts, especially when collaborating on projects involving code, data, or documentation. Git, the most widely used version control system, offers a structured way to track changes, collaborate effectively, and maintain a history of your work🚀✨.",
+      link: "https://medium.com/@peshala84/everything-an-analyst-needs-to-know-to-use-git-for-version-control-d1e8f78659c0",
+      image: "/image/blog_4.png",
+      category: ["Git", "Version Control"]
     },
     {
       title: "Debugging Multithreading Issues in Java 🧵",
