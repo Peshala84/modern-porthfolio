@@ -118,7 +118,7 @@ function About() {
             <p>Projects Completed</p>
           </div>
           <div className="counter-item">
-            <h4>35+</h4>
+            <h4>20+</h4>
             <p>Certifications</p>
           </div>
           <div className="counter-item">
