@@ -7,24 +7,24 @@ function Projects() {
 
   const projects = [
     {
-      title: "ACM WEB TASK",
-      description: "Dive into the ultimate gaming adventure! Explore thrilling games, stay updated with gaming posts, and enjoy an immersive experience with this full-stack masterpiece!",
+      title: "Hour OF CODE",
+      description: "A website for coding events organized by the UCSC ACM Student Chapter, built with Next.js, Tailwind CSS, and React.js.",
       technologies: ["React", "Node.js"],
-      githubLink: "https://github.com/Peshala84/acm-web-task.git",
-      image: "/image/project_1.jpg",
+      githubLink: "https://acm-monthly-meetups.vercel.app/meetup/hoc",
+      image: "/image/project_1.png",
       category: ["Web", "Full Stack"]
     },
     {
-      title: "CALCULATOR",  
-      description: "Feel the rhythm, live the beats! A dynamic Java-based music player that keeps your favorite tunes flowing smoothly. Perfect for all music lovers!",
-      technologies: ["JavaScript", "HTML"],
-      githubLink: "https://github.com/Peshala84/html-css-js-Calculator.git",
-      image: "/image/project_2.jpg",
-      category: ["Web", "APP"]
+      title: "Dentist Web App",  
+      description: "A dental appointment booking system created using PHP, MySQL, CSS, and HTML for efficient patient scheduling.",
+      technologies: ["HTML", "PHP", "MySQL"],
+      githubLink: "https://github.com/Peshala84/dentist-web-app.git",
+      image: "/image/project_2.png",
+      category: ["Web", "Medical"]
     },
     {
       title: "MADHACK 3.0 WEB TASK",
-      description: "Track your fitness like a pro! Quickly calculate your Body Mass Index (BMI) to stay healthy and motivated. Fitness just got smarter!",
+      description: "Developed for the UCSC IEEE Student Branch web team selection using React.js and CSS to showcase front-end skills.",
       technologies: ["React", "CSS"],
       githubLink: "https://github.com/Peshala84/madhack-3.0-web-task.git",
       image: "/image/project_3.png",
@@ -32,7 +32,7 @@ function Projects() {
     },
     {
       title: "CCTV CAMERA COMPANY WEBSITE",
-      description: "Revolutionize healthcare management with a robust MERN stack application. Streamline hospital operations and improve patient care.",
+      description: "A professional website for a camera company, built with React.js and CSS to present products and services effectively.",
       technologies: ["React", "Node.js" ],
       githubLink: "https://github.com/Peshala84/SafeCam-web-app.git",
       image: "/image/project_4.png",
@@ -40,15 +40,15 @@ function Projects() {
     },
     {
       title: "TRAVEL & TOUR WEBSITE",
-      description: "Break language barriers with a seamless translation experience. Supports multiple languages and provides accurate translations.",
+      description: " A travel agency platform developed with HTML, CSS, PHP, and MySQL to offer travel packages and online booking.",
       technologies: ["PHP", "HTML", "CSS", "JavaScript"],
       githubLink: "https://github.com/Peshala84/travel-tour-web-page.git",
-      image: "/image/project_5.jpg",
+      image: "/image/project_5.png",
       category: ["Full Stack", "Travel"]
     },
     {
       title: "MEDICARE WEB APP",
-      description: "An interactive quiz application with dynamic question generation, user authentication, and real-time scoring.",
+      description: "An online medical appointment system designed with Next.js and Tailwind CSS for seamless patient registration and scheduling.",
       technologies: ["TypeScript", "React", "Tailwind CSS"],
       githubLink: "https://github.com/Peshala84/medicare-web-app.git",
       image: "/image/project_6.png",
