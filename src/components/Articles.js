@@ -35,8 +35,8 @@ function Articles() {
       category: ["Git", "Version Control"]
     },
     {
-      title: "Debugging Multithreading Issues in Java 🧵",
-      description: "🛠️ Simplify multithreading in Java! This article provides a clear, step-by-step guide to identifying and resolving common issues like race conditions and deadlocks.",
+      title: "Everything an Analyst Needs to Know to Use Git for Version Control 🔐",
+      description: "Version control is an essential skill for analysts, especially when collaborating on projects involving code, data, or documentation. Git, the most widely used version control system, offers a structured way to track changes, collaborate effectively, and maintain a history of your work🚀✨",
       link: "",
       image: "/image/blog_1.png",
       category: ["Java", "Concurrency"]
