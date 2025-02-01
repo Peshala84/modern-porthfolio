@@ -187,4 +187,7 @@
     .btn {
       padding: 10px 20px;
     }
+     .hero-image{
+      display: none;
+     }
   }

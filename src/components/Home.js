@@ -102,14 +102,11 @@ function Home() {
             </div>
 
             <div className="hero-image">
-              <div 
-                className="hero-bg-image"
-              >
+              <div className="hero-bg-image">
                  <img 
-                  src="/image/main.png" 
-                  alt="Ramesh Peshala" 
-                  className="img-fluid"
-                />
+                 src="/image/main.png" 
+                 alt="Ramesh Peshala" 
+                 className="img-fluid" />
                 <div className="image-overlay"></div>
               </div>
             </div>
