@@ -197,19 +197,32 @@
   
   .counter-item {
     text-align: center;
-    border: 2px solid var(--primary-color);
     width: 30%;
+   
   }
   
-  .counter-item h4 {
+  .counter-item h3 {
     font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 5px;
   }
   
-  .counter-item p {
+  .counter-item h1 {
     color: var(--text-color);
     opacity: 0.7;
+  }
+  .counter-item a{
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+
+  }
+  .counter-item a:hover{
+    background-color: var(--primary-color);
+    color: var(--background-color);
   }
   
   /* Responsive Design */
@@ -223,6 +236,9 @@
     }
   
     .achievements-counter {
-      flex-direction: column;
+      flex-direction: row;
+    }
+    .counter-item h1{
+      font-size: 1rem;
     }
   }
