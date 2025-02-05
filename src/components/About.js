@@ -114,16 +114,19 @@ function About() {
 
         <div className="achievements-counter">
           <div className="counter-item">
-            <h4>9+</h4>
-            <p>Projects Completed</p>
+            <h3>9+</h3>
+            <h1>Projects</h1>
+             <a href='https://github.com/Peshala84'>See All</a>
           </div>
           <div className="counter-item">
-            <h4>20+</h4>
-            <p>Certifications</p>
+            <h3>20+</h3>
+            <h1>Certifications</h1>
+            <a href='https://www.linkedin.com/in/ramesh-peshala-b84a632aa'>See All</a>
           </div>
           <div className="counter-item">
-            <h4>500+</h4>
-            <p>Connections</p>
+            <h3>500+</h3>
+            <h1>Connections</h1>
+            <a href='https://www.linkedin.com/in/ramesh-peshala-b84a632aa'>See All</a>
           </div>
         </div>
       </div>
