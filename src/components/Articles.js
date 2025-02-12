@@ -35,11 +35,11 @@ function Articles() {
       category: ["Git", "Version Control"]
     },
     {
-      title: "Everything an Analyst Needs to Know to Use Git for Version Control 🔐",
-      description: "Version control is an essential skill for analysts, especially when collaborating on projects involving code, data, or documentation. Git, the most widely used version control system, offers a structured way to track changes, collaborate effectively, and maintain a history of your work🚀✨",
-      link: "",
-      image: "/image/blog_1.png",
-      category: ["Java", "Concurrency"]
+      title: "The Role of Hooks in Modern React Development 🤖",
+      description: "React.js, one of the most popular JavaScript libraries for building user interfaces, introduced Hooks in version 16.8. Before Hooks, functional components were limited to rendering UI, while class components handled state and lifecycle methods🚀✨",
+      link: "https://medium.com/@peshala84/the-role-of-hooks-in-modern-react-development-a9b27ee0ac8a",
+      image: "/image/blog_5.jpg",
+      category: ["React", "JavaScript"]
     }
   ];
 
