@@ -121,6 +121,7 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--primary-color);
   }
   .personal-info h2{
     color: var(--primary-color);
@@ -163,6 +164,10 @@
     padding: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   }
+  .skill-item:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
   
   .skill-info {
     display: flex;
@@ -188,6 +193,10 @@
   .progress-bar {
     height: 100%;
   }
+  .profile-image:hover img {
+    transform: scale(1.1) rotate(2deg);
+    transition: all 0.4s ease;
+  }
   
   .achievements-counter {
     display: flex;
@@ -198,6 +207,7 @@
   .counter-item {
     text-align: center;
     width: 30%;
+    transition: transform 0.3s ease;
    
   }
   
