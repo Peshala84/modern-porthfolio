@@ -1,6 +1,23 @@
 // src/components/Resume.js
-import React from 'react';
+import React, { useRef } from 'react';
 import './Resume.css';
+import { motion, useInView } from 'framer-motion';
+
+function FadeInSection({ children }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+    >
+      {children}
+    </motion.div>
+  );
+}
 
 function Resume() {
   const experiences = [
@@ -57,7 +74,6 @@ function Resume() {
     { name: "Cloud Computing", level: "Beginner" },
     { name: "Agile Methodologies", level: "Intermediate" },
     { name: "Project Management", level: "Intermediate" }
-
   ];
 
   return (
@@ -69,93 +85,107 @@ function Resume() {
         </div>
 
         <div className="resume-content">
-          <div className="resume-column">
-            <div className="resume-section-title">
-              <i className="icon-briefcase"></i>
-              <h2>Professional Experience</h2>
-            </div>
-            <div className="timeline">
-              {experiences.map((exp, index) => (
-                <div key={index} className="timeline-item">
-                  <div className="timeline-marker"></div>
-                  <div className="timeline-content">
-                    <h3 className="timeline-title">{exp.title}</h3>
-                    <span className="timeline-company">{exp.company}</span>
-                    <span className="timeline-period">{exp.period}</span>
-                    <ul className="timeline-description">
-                      {exp.description.map((desc, i) => (
-                        <li key={i}>{desc}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="resume-column">
-            <div className="resume-section-title">
-              <i className="icon-graduation-cap"></i>
-              <h2>Educational Background</h2>
-            </div>
-            <div className="timeline">
-              {education.map((edu, index) => (
-                <div key={index} className="timeline-item">
-                  <div className="timeline-marker"></div>
-                  <div className="timeline-content">
-                    <h3 className="timeline-title">{edu.degree}</h3>
-                    <span className="timeline-company">{edu.institution}</span>
-                    <span className="timeline-period">{edu.period}</span>
-                    <p className="timeline-description">{edu.details}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className="professional-skills">
-          <div className="section-header">
-            <h2>Professional Skills</h2>
-            <span>Technical Expertise</span>
-          </div>
-          <div className="skills-grid">
-            {skills.map((skill, index) => (
-              <div key={index} className="skill-item">
-                <div className="t_skill-info">
-                  <h3>{skill.name}</h3>
-                  <span className="skill-level">{skill.level}</span>
-                </div>
-                <div className="skill-progress">
-                  <div
-                    className="progress-bar"
-                    style={{
-                      width: skill.level === "Advanced" ? "90%"
-                        : skill.level === "Intermediate" ? "70%"
-                          : "30%"
-                    }}
-                  ></div>
-                </div>
+          <FadeInSection>
+            <div className="resume-column">
+              <div className="resume-section-title">
+                <i className="icon-briefcase"></i>
+                <h2>Professional Experience</h2>
               </div>
-            ))}
-          </div>
+              <div className="timeline">
+                {experiences.map((exp, index) => (
+                  <FadeInSection key={index}>
+                    <div className="timeline-item">
+                      <div className="timeline-marker"></div>
+                      <div className="timeline-content">
+                        <h3 className="timeline-title">{exp.title}</h3>
+                        <span className="timeline-company">{exp.company}</span>
+                        <span className="timeline-period">{exp.period}</span>
+                        <ul className="timeline-description">
+                          {exp.description.map((desc, i) => (
+                            <li key={i}>{desc}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </FadeInSection>
+                ))}
+              </div>
+            </div>
+          </FadeInSection>
+
+          <FadeInSection>
+            <div className="resume-column">
+              <div className="resume-section-title">
+                <i className="icon-graduation-cap"></i>
+                <h2>Educational Background</h2>
+              </div>
+              <div className="timeline">
+                {education.map((edu, index) => (
+                  <FadeInSection key={index}>
+                    <div className="timeline-item">
+                      <div className="timeline-marker"></div>
+                      <div className="timeline-content">
+                        <h3 className="timeline-title">{edu.degree}</h3>
+                        <span className="timeline-company">{edu.institution}</span>
+                        <span className="timeline-period">{edu.period}</span>
+                        <p className="timeline-description">{edu.details}</p>
+                      </div>
+                    </div>
+                  </FadeInSection>
+                ))}
+              </div>
+            </div>
+          </FadeInSection>
         </div>
 
-        <div className="resume-actions">
-          <a
-            href="/path/to/your/resume.pdf"
-            className="r_btn r_btn-primary"
-            download
-          >
-            Download CV
-          </a>
-          <a
-            href="#contact-section"
-            className="r_btn r_btn-primary"
-          >
-            Hire Me
-          </a>
-        </div>
+        <FadeInSection>
+          <div className="professional-skills">
+            <div className="section-header">
+              <h2>Professional Skills</h2>
+              <span>Technical Expertise</span>
+            </div>
+            <div className="skills-grid">
+              {skills.map((skill, index) => (
+                <motion.div
+                  key={index}
+                  className="skill-item"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.97 }}
+                >
+                  <div className="t_skill-info">
+                    <h3>{skill.name}</h3>
+                    <span className="skill-level">{skill.level}</span>
+                  </div>
+                  <div className="skill-progress">
+                    <div
+                      className="progress-bar"
+                      style={{
+                        width: skill.level === "Advanced" ? "90%"
+                          : skill.level === "Intermediate" ? "70%"
+                            : "30%"
+                      }}
+                    ></div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </FadeInSection>
+
+        <FadeInSection>
+          <div className="resume-actions">
+            <a
+              href="/path/to/your/resume.pdf"
+              className="r_btn r_btn-primary"
+              download
+            >
+              Download CV
+            </a>
+            <a href="#contact-section" className="r_btn r_btn-primary">
+              Hire Me
+            </a>
+          </div>
+        </FadeInSection>
       </div>
     </section>
   );
