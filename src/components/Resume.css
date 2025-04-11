@@ -3,9 +3,13 @@
   --secondary-color: #212529;
   --background-color: #111;
   --text-color: #ffffff;
-  --btn-text-color:#000;
+  --btn-text-color: #000;
   --card-background: #1e2022;
   --border-color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .resume-section {
@@ -83,14 +87,14 @@
   border-bottom: 1px solid var(--border-color);
 }
 
-.timeline -marker {
+.timeline-marker {
   position: absolute;
-  left: -10px;
+  left: -40px;
   top: 0;
   width: 20px;
   height: 20px;
   background-color: var(--primary-color);
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 .timeline-content {
@@ -136,19 +140,7 @@
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.skill-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.t_skill-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  transition: transform 0.3s ease;
 }
 
 .skill-level {
@@ -182,7 +174,6 @@
   border-radius: 5px;
   text-decoration: none;
   transition: all 0.3s ease;
-
 }
 
 .r_btn-primary {
@@ -201,5 +192,10 @@
 @media screen and (max-width: 768px) {
   .resume-content {
     grid-template-columns: 1fr;
+  }
+
+  .resume-actions {
+    flex-direction: column;
+    gap: 20px;
   }
 }
