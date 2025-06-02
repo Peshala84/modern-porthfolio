@@ -125,7 +125,7 @@ html {
   padding-left: 20px;
 }
 
-.professional-skills {
+/* .professional-skills {
   margin-top: 50px;
 }
 
@@ -159,7 +159,7 @@ html {
 .progress-bar {
   height: 100%;
   background-color: var(--primary-color);
-}
+} */
 
 .resume-actions {
   text-align: center;
@@ -198,4 +198,26 @@ html {
     flex-direction: column;
     gap: 20px;
   }
+}
+.certificate-section {
+  margin-top: 50px;
+}
+
+.certificates-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certificate-img {
+  max-width: 100%;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.certificate-img:hover {
+  transform: scale(1.05);
 }

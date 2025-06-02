@@ -138,7 +138,7 @@ function Resume() {
           </FadeInSection>
         </div>
 
-        <FadeInSection>
+        {/* <FadeInSection>
           <div className="professional-skills">
             <div className="section-header">
               <h2>Professional Skills</h2>
@@ -170,7 +170,35 @@ function Resume() {
               ))}
             </div>
           </div>
+        </FadeInSection> */}
+
+        <FadeInSection>
+          <div className="certificate-section">
+            <div className="section-header">
+              <h2>Certificates</h2>
+              <span>My Achievements</span>
+            </div>
+            <div className="certificates-grid">
+              <img src="/image/cetificate_1.png" alt="Certificate" className="certificate-img" />
+              <img src="/image/cetificate_2.png" alt="Certificate" className="certificate-img" />
+              <img src="/image/cetificate_3.png" alt="Certificate" className="certificate-img" />
+              <img src="/image/cetificate_4.png" alt="Certificate" className="certificate-img" />
+              <img src="/image/cetificate_5.png" alt="Certificate" className="certificate-img" />
+              <img src="/image/cetificate_6.png" alt="Certificate" className="certificate-img" />
+            </div>
+          </div>
+          <div className="projects-cta">
+          <a 
+            href="https://www.linkedin.com/in/ramesh-peshala-b84a632aa/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="p_btn p_btn-primary"
+          >
+            Explore More on LinkedIn
+          </a>
+        </div>
         </FadeInSection>
+
 
         <FadeInSection>
           <div className="resume-actions">
