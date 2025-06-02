@@ -140,19 +140,20 @@
 import React from 'react';
 import './About.css';
 import { motion } from 'framer-motion';
+import { img } from 'framer-motion/client';
 
 function About() {
   const skills = [
-    { name: 'Javascript', percentage: 95, color: '#F0DB4F' },
-    { name: 'CSS', percentage: 95, color: '#F0DB4F' },
-    { name: 'C', percentage: 90, color: '#F0DB4F' },
-    { name: 'JAVA', percentage: 90, color: '#F0DB4F' },
-    { name: 'C++', percentage: 85, color: '#F0DB4F' },
-    { name: 'SQL', percentage: 70, color: '#F0DB4F' },
-    { name: 'HTML', percentage: 70, color: '#F0DB4F' },
-    { name: 'Figma', percentage: 70, color: '#F0DB4F' },
-    { name: 'PHP', percentage: 70, color: '#F0DB4F' },
-    { name: 'Jenkins', percentage: 70, color: '#F0DB4F' },
+    { name: 'Javascript' , color: '#F0DB4F' },
+    { name: 'CSS',color: '#F0DB4F' },
+    { name: 'C',color: '#F0DB4F' },
+    { name: 'Java',color: '#F0DB4F' },
+    { name: 'C++',color: '#F0DB4F' },
+    { name: 'SQL',color: '#F0DB4F' },
+    { name: 'HTML',color: '#F0DB4F' },
+    { name: 'Figma',color: '#F0DB4F' },
+    { name: 'PHP', color: '#F0DB4F' },
+    { name: 'TypeScript', color: '#F0DB4F' },
   ];
 
   const personalInfo = [
@@ -270,9 +271,9 @@ function About() {
               >
                 <div className="skill-info">
                   <span className="skill-name">{skill.name}</span>
-                  <span className="skill-percentage">{skill.percentage}%</span>
+                  {/* <span className="skill-percentage">{skill.percentage}%</span> */}
                 </div>
-                <div className="skill-progress">
+                {/* <div className="skill-progress">
                   <motion.div
                     className="progress-bar"
                     initial={{ width: 0 }}
@@ -280,7 +281,7 @@ function About() {
                     transition={{ duration: 1 }}
                     style={{ backgroundColor: skill.color }}
                   ></motion.div>
-                </div>
+                </div> */}
               </motion.div>
             ))}
           </div>

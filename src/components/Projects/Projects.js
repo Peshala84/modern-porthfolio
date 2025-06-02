@@ -7,52 +7,52 @@ function Projects() {
 
   const projects = [
     {
-      title: "Hour OF CODE",
-      description: "A website for coding events organized by the UCSC ACM Student Chapter, built with Next.js, Tailwind CSS, and React.js.",
-      technologies: ["React", "Node.js"],
-      githubLink: "https://acm-monthly-meetups.vercel.app/meetup/hoc",
+      title: "VetiPlus -Vet Clinic Management System",  
+      description: "Our platform is a secure, web-based system that connects pet owners, vets, assistants, salons, admins, and the system owner—each with tailored tools to manage pet care, services, and operations efficiently",
+      // technologies: ["HTML", "PHP", "MySQL"],
+      githubLink: "https://github.com/Peshala84/VetiPlusMVC.git",
       image: "/image/project_1.png",
-      category: ["Web", "Full Stack"]
-    },
-    {
-      title: "Dentist Web App",  
-      description: "A dental appointment booking system created using PHP, MySQL, CSS, and HTML for efficient patient scheduling.",
-      technologies: ["HTML", "PHP", "MySQL"],
-      githubLink: "https://github.com/Peshala84/dentist-web-app.git",
-      image: "/image/project_2.png",
       category: ["Web", "Medical"]
     },
     {
-      title: "MADHACK 3.0 WEB TASK",
-      description: "Developed for the UCSC IEEE Student Branch web team selection using React.js and CSS to showcase front-end skills.",
-      technologies: ["React", "CSS"],
-      githubLink: "https://github.com/Peshala84/madhack-3.0-web-task.git",
-      image: "/image/project_3.png",
+      title: "FoodwaGon - Smart Restaurant Management System",
+      description: "FoodwaGon is a smart restaurant management system that streamlines operations for admins, chefs, and customers on a single platform",
+      // technologies: ["React", "CSS"],
+      githubLink: "https://github.com/Peshala84/mern-stack-group-project.git",
+      image: "/image/project_2.png",
       category: ["IEEE", "Web"]
     },
+     {
+      title: "StructuraX - Smart Construction Project Management System",
+      description: "StructuraX is a web-based platform that streamlines construction project management by connecting all stakeholders for better communication, tracking, and resource management",
+      // technologies: ["TypeScript", "React", "Tailwind CSS"],
+      githubLink: "https://github.com/DilshaniNK/StructureX-Frontend.git",
+      image: "/image/project_3.png",
+      category: ["Web", "Medical"]
+    },
     {
-      title: "CCTV CAMERA COMPANY WEBSITE",
-      description: "A professional website for a camera company, built with React.js and CSS to present products and services effectively.",
-      technologies: ["React", "Node.js" ],
-      githubLink: "https://github.com/Peshala84/SafeCam-web-app.git",
+      title: "LankaRoutes",
+      description: "LankaRoutes is a smart travel platform for exploring destinations across Sri Lanka. Users can book appointments and view travel conditions for a smooth journey",
+      // technologies: ["React", "Node.js" ],
+      githubLink: "https://github.com/Peshala84/travel-booking.git",
       image: "/image/project_4.png",
       category: ["Camera", "Web"]
     },
     {
-      title: "TRAVEL & TOUR WEBSITE",
+      title: "Recipe-Sharing",
       description: " A travel agency platform developed with HTML, CSS, PHP, and MySQL to offer travel packages and online booking.",
-      technologies: ["PHP", "HTML", "CSS", "JavaScript"],
-      githubLink: "https://github.com/Peshala84/travel-tour-web-page.git",
+      // technologies: ["PHP", "HTML", "CSS", "JavaScript"],
+      githubLink: "https://github.com/Peshala84/recipe-sharing-system.git",
       image: "/image/project_5.png",
       category: ["Full Stack", "Travel"]
     },
-    {
-      title: "MEDICARE WEB APP",
-      description: "An online medical appointment system designed with Next.js and Tailwind CSS for seamless patient registration and scheduling.",
-      technologies: ["TypeScript", "React", "Tailwind CSS"],
-      githubLink: "https://github.com/Peshala84/medicare-web-app.git",
+     {
+      title: "Hour OF CODE",
+      description: "A website for coding events organized by the UCSC ACM Student Chapter, built with Next.js, Tailwind CSS, and React.js.",
+      // technologies: ["React", "Node.js"],
+      githubLink: "https://acm-monthly-meetups.vercel.app/meetup/hoc",
       image: "/image/project_6.png",
-      category: ["Web", "Medical"]
+      category: ["Web", "Full Stack"]
     }
   ];
 
@@ -96,13 +96,13 @@ function Projects() {
                 className="project-image"
                 style={{ backgroundImage: `url(${project.image})` }}
               >
-                <div className="image-overlay">
+                {/* <div className="image-overlay">
                   <div className="project-technologies">
                     {project.technologies.map((tech, techIndex) => (
                       <span key={techIndex} className="tech-tag">{tech}</span>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
               
               <div className="project-content">
