@@ -31,7 +31,7 @@ function Projects() {
       category: ["Web", "Medical"]
     },
     {
-      title: "LankaRoutes",
+      title: "WorldRoutes",
       description: "LankaRoutes is a smart travel platform for exploring destinations across Sri Lanka. Users can book appointments and view travel conditions for a smooth journey",
       // technologies: ["React", "Node.js" ],
       githubLink: "https://github.com/Peshala84/travel-booking.git",

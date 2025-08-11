@@ -32,7 +32,7 @@ function Resume() {
       ]
     },
     {
-      title: "Web Team Member",
+      title: "Web Master",
       company: "UCSC ACM Student Chapter",
       period: "2024 - Present",
       description: [
@@ -188,22 +188,22 @@ function Resume() {
             </div>
           </div>
           <div className="projects-cta">
-          <a 
-            href="https://www.linkedin.com/in/ramesh-peshala-b84a632aa/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="p_btn p_btn-primary"
-          >
-            Explore More on LinkedIn
-          </a>
-        </div>
+            <a
+              href="https://www.linkedin.com/in/ramesh-peshala-b84a632aa/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p_btn p_btn-primary"
+            >
+              Explore More on LinkedIn
+            </a>
+          </div>
         </FadeInSection>
 
 
         <FadeInSection>
           <div className="resume-actions">
             <a
-              href="/path/to/your/resume.pdf"
+              href="/image/RameshPeshalaCV.pdf"
               className="r_btn r_btn-primary"
               download
             >
