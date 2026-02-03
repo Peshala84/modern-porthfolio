@@ -111,7 +111,7 @@ function Contact() {
     {
       icon: 'fas fa-phone',
       title: 'Phone',
-      content: '+94 762163506'
+      content: '+94 783989077'
     },
     {
       icon: 'fas fa-envelope',
